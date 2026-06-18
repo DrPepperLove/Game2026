@@ -1,0 +1,46 @@
+{
+  "id": "ch1_02",
+  "name": "斥候来犯",
+  "chapter": 1,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "grassland",
+  "pathWaypoints": [
+    { "x": 0, "y": 96 },
+    { "x": 224, "y": 96 },
+    { "x": 224, "y": 352 },
+    { "x": 576, "y": 352 },
+    { "x": 576, "y": 96 },
+    { "x": 928, "y": 96 },
+    { "x": 928, "y": 544 },
+    { "x": 1024, "y": 544 }
+  ],
+  "buildSpots": [
+    { "gridX": 3, "gridY": 1 },
+    { "gridX": 5, "gridY": 4 },
+    { "gridX": 2, "gridY": 9 },
+    { "gridX": 7, "gridY": 9 },
+    { "gridX": 14, "gridY": 9 },
+    { "gridX": 18, "gridY": 1 },
+    { "gridX": 27, "gridY": 1 },
+    { "gridX": 27, "gridY": 11 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "SLOW" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1800, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 4, "spawnInterval": 1200, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 6, "spawnInterval": 1000, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1200, "startDelay": 1000 },
+    { "enemyType": "SCOUT", "count": 4, "spawnInterval": 1000, "startDelay": 500 }
+  ],
+  "startingEssence": 20,
+  "baseLives": 15,
+  "maxHandSize": 5
+}

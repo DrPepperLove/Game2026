@@ -1,0 +1,51 @@
+{
+  "id": "ch3_01",
+  "name": "铁壁",
+  "chapter": 3,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "mountain",
+  "pathWaypoints": [
+    { "x": 0, "y": 320 },
+    { "x": 224, "y": 320 },
+    { "x": 224, "y": 96 },
+    { "x": 544, "y": 96 },
+    { "x": 544, "y": 544 },
+    { "x": 832, "y": 544 },
+    { "x": 832, "y": 288 },
+    { "x": 1024, "y": 288 }
+  ],
+  "buildSpots": [
+    { "gridX": 2, "gridY": 8 },
+    { "gridX": 5, "gridY": 1 },
+    { "gridX": 9, "gridY": 1 },
+    { "gridX": 14, "gridY": 5 },
+    { "gridX": 12, "gridY": 13 },
+    { "gridX": 17, "gridY": 14 },
+    { "gridX": 22, "gridY": 14 },
+    { "gridX": 24, "gridY": 10 },
+    { "gridX": 26, "gridY": 7 },
+    { "gridX": 28, "gridY": 3 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "SLOW" },
+    { "type": "ENCHANTMENT", "enchantmentId": "splash" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "TANK", "count": 2, "spawnInterval": 3000, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1000, "startDelay": 1500 },
+    { "enemyType": "TANK", "count": 3, "spawnInterval": 2500, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 1200, "startDelay": 1500 },
+    { "enemyType": "TANK", "count": 3, "spawnInterval": 2000, "startDelay": 1000 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 800, "startDelay": 500 }
+  ],
+  "startingEssence": 30,
+  "baseLives": 15,
+  "maxHandSize": 6
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ch2_02",
+  "name": "召唤之源",
+  "chapter": 2,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "swamp",
+  "pathWaypoints": [
+    { "x": 0, "y": 160 },
+    { "x": 192, "y": 160 },
+    { "x": 192, "y": 416 },
+    { "x": 448, "y": 416 },
+    { "x": 448, "y": 160 },
+    { "x": 704, "y": 160 },
+    { "x": 704, "y": 544 },
+    { "x": 1024, "y": 544 }
+  ],
+  "buildSpots": [
+    { "gridX": 2, "gridY": 3 },
+    { "gridX": 4, "gridY": 8 },
+    { "gridX": 1, "gridY": 11 },
+    { "gridX": 8, "gridY": 11 },
+    { "gridX": 12, "gridY": 11 },
+    { "gridX": 14, "gridY": 3 },
+    { "gridX": 13, "gridY": 8 },
+    { "gridX": 20, "gridY": 3 },
+    { "gridX": 22, "gridY": 14 },
+    { "gridX": 27, "gridY": 14 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "SLOW" },
+    { "type": "ENCHANTMENT", "enchantmentId": "frost" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1600, "startDelay": 2000 },
+    { "enemyType": "SUMMONER", "count": 2, "spawnInterval": 3000, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1300, "startDelay": 1500 },
+    { "enemyType": "SUMMONER", "count": 2, "spawnInterval": 2500, "startDelay": 1500 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1000, "startDelay": 2000 },
+    { "enemyType": "SUMMONER", "count": 3, "spawnInterval": 2500, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 1000, "startDelay": 1000 }
+  ],
+  "startingEssence": 30,
+  "baseLives": 15,
+  "maxHandSize": 6
+}

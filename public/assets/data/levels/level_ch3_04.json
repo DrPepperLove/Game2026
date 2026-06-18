@@ -1,0 +1,63 @@
+{
+  "id": "ch3_04",
+  "name": "熔炉核心",
+  "chapter": 3,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "mountain",
+  "pathWaypoints": [
+    { "x": 0, "y": 96 },
+    { "x": 288, "y": 96 },
+    { "x": 288, "y": 384 },
+    { "x": 64, "y": 384 },
+    { "x": 64, "y": 576 },
+    { "x": 416, "y": 576 },
+    { "x": 416, "y": 256 },
+    { "x": 704, "y": 256 },
+    { "x": 704, "y": 576 },
+    { "x": 960, "y": 576 },
+    { "x": 960, "y": 352 },
+    { "x": 1024, "y": 352 }
+  ],
+  "buildSpots": [
+    { "gridX": 5, "gridY": 1 },
+    { "gridX": 7, "gridY": 6 },
+    { "gridX": 3, "gridY": 9 },
+    { "gridX": 1, "gridY": 14 },
+    { "gridX": 7, "gridY": 16 },
+    { "gridX": 12, "gridY": 13 },
+    { "gridX": 11, "gridY": 7 },
+    { "gridX": 16, "gridY": 6 },
+    { "gridX": 20, "gridY": 12 },
+    { "gridX": 22, "gridY": 16 },
+    { "gridX": 28, "gridY": 14 },
+    { "gridX": 30, "gridY": 8 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "SLOW" },
+    { "type": "ENCHANTMENT", "enchantmentId": "stun" },
+    { "type": "ENCHANTMENT", "enchantmentId": "splash" }
+  ],
+  "waves": [
+    { "enemyType": "TANK", "count": 3, "spawnInterval": 2500, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1200, "startDelay": 2000 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 2500, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1000, "startDelay": 1500 },
+    { "enemyType": "TANK", "count": 3, "spawnInterval": 2000, "startDelay": 1500 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 2000, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 800, "startDelay": 1000 },
+    { "enemyType": "TANK", "count": 4, "spawnInterval": 2000, "startDelay": 1000 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 1500, "startDelay": 500 },
+    { "enemyType": "SUMMONER", "count": 2, "spawnInterval": 2000, "startDelay": 500 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 1500, "startDelay": 1500 },
+    { "enemyType": "MOUNTAIN_BOSS", "count": 1, "spawnInterval": 3000, "startDelay": 3000 }
+  ],
+  "startingEssence": 40,
+  "baseLives": 15,
+  "maxHandSize": 7
+}

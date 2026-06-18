@@ -1,0 +1,37 @@
+{
+  "id": "ch1_01",
+  "name": "初阵",
+  "chapter": 1,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "grassland",
+  "pathWaypoints": [
+    { "x": 0, "y": 192 },
+    { "x": 512, "y": 192 },
+    { "x": 512, "y": 640 },
+    { "x": 1024, "y": 640 }
+  ],
+  "buildSpots": [
+    { "gridX": 2, "gridY": 4 },
+    { "gridX": 5, "gridY": 4 },
+    { "gridX": 8, "gridY": 4 },
+    { "gridX": 11, "gridY": 7 },
+    { "gridX": 14, "gridY": 10 },
+    { "gridX": 14, "gridY": 15 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 3, "spawnInterval": 2000, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1800, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 1200, "startDelay": 2000 }
+  ],
+  "startingEssence": 15,
+  "baseLives": 15,
+  "maxHandSize": 5
+}

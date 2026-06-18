@@ -1,0 +1,51 @@
+{
+  "id": "ch2_03",
+  "name": "暗影之翼",
+  "chapter": 2,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "swamp",
+  "pathWaypoints": [
+    { "x": 0, "y": 480 },
+    { "x": 160, "y": 480 },
+    { "x": 160, "y": 128 },
+    { "x": 480, "y": 128 },
+    { "x": 480, "y": 480 },
+    { "x": 800, "y": 480 },
+    { "x": 800, "y": 96 },
+    { "x": 1024, "y": 96 }
+  ],
+  "buildSpots": [
+    { "gridX": 2, "gridY": 14 },
+    { "gridX": 1, "gridY": 10 },
+    { "gridX": 4, "gridY": 2 },
+    { "gridX": 9, "gridY": 2 },
+    { "gridX": 11, "gridY": 8 },
+    { "gridX": 14, "gridY": 14 },
+    { "gridX": 18, "gridY": 14 },
+    { "gridX": 22, "gridY": 14 },
+    { "gridX": 25, "gridY": 8 },
+    { "gridX": 25, "gridY": 2 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "SLOW" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1800, "startDelay": 2000 },
+    { "enemyType": "FLYING", "count": 3, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 3, "spawnInterval": 1600, "startDelay": 1500 },
+    { "enemyType": "FLYING", "count": 4, "spawnInterval": 1300, "startDelay": 1500 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1000, "startDelay": 2000 },
+    { "enemyType": "FLYING", "count": 5, "spawnInterval": 1200, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1000, "startDelay": 1000 },
+    { "enemyType": "FLYING", "count": 4, "spawnInterval": 800, "startDelay": 500 }
+  ],
+  "startingEssence": 30,
+  "baseLives": 15,
+  "maxHandSize": 6
+}

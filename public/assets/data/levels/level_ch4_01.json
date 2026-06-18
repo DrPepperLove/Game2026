@@ -1,0 +1,56 @@
+{
+  "id": "ch4_01",
+  "name": "混沌前兆",
+  "chapter": 4,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "chaos",
+  "pathWaypoints": [
+    { "x": 0, "y": 544 },
+    { "x": 192, "y": 544 },
+    { "x": 192, "y": 96 },
+    { "x": 544, "y": 96 },
+    { "x": 544, "y": 544 },
+    { "x": 832, "y": 544 },
+    { "x": 832, "y": 160 },
+    { "x": 1024, "y": 160 }
+  ],
+  "buildSpots": [
+    { "gridX": 2, "gridY": 15 },
+    { "gridX": 4, "gridY": 8 },
+    { "gridX": 4, "gridY": 2 },
+    { "gridX": 10, "gridY": 1 },
+    { "gridX": 12, "gridY": 8 },
+    { "gridX": 14, "gridY": 14 },
+    { "gridX": 17, "gridY": 14 },
+    { "gridX": 20, "gridY": 5 },
+    { "gridX": 24, "gridY": 10 },
+    { "gridX": 26, "gridY": 3 },
+    { "gridX": 28, "gridY": 3 },
+    { "gridX": 30, "gridY": 8 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "SLOW" },
+    { "type": "ENCHANTMENT", "enchantmentId": "crit" }
+  ],
+  "waves": [
+    { "enemyType": "SCOUT", "count": 6, "spawnInterval": 1000, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 1200, "startDelay": 2000 },
+    { "enemyType": "VENOM", "count": 4, "spawnInterval": 1200, "startDelay": 2000 },
+    { "enemyType": "FLYING", "count": 5, "spawnInterval": 1000, "startDelay": 2000 },
+    { "enemyType": "TANK", "count": 3, "spawnInterval": 2000, "startDelay": 2000 },
+    { "enemyType": "SUMMONER", "count": 2, "spawnInterval": 2500, "startDelay": 2000 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 2000, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 8, "spawnInterval": 600, "startDelay": 1000 },
+    { "enemyType": "VENOM", "count": 4, "spawnInterval": 800, "startDelay": 500 },
+    { "enemyType": "FLYING", "count": 5, "spawnInterval": 600, "startDelay": 500 }
+  ],
+  "startingEssence": 40,
+  "baseLives": 20,
+  "maxHandSize": 7
+}

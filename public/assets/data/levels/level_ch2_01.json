@@ -1,0 +1,48 @@
+{
+  "id": "ch2_01",
+  "name": "毒雾弥漫",
+  "chapter": 2,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "swamp",
+  "pathWaypoints": [
+    { "x": 0, "y": 320 },
+    { "x": 128, "y": 320 },
+    { "x": 128, "y": 96 },
+    { "x": 416, "y": 96 },
+    { "x": 416, "y": 544 },
+    { "x": 704, "y": 544 },
+    { "x": 704, "y": 128 },
+    { "x": 1024, "y": 128 }
+  ],
+  "buildSpots": [
+    { "gridX": 1, "gridY": 7 },
+    { "gridX": 3, "gridY": 1 },
+    { "gridX": 7, "gridY": 1 },
+    { "gridX": 10, "gridY": 7 },
+    { "gridX": 10, "gridY": 13 },
+    { "gridX": 6, "gridY": 16 },
+    { "gridX": 16, "gridY": 16 },
+    { "gridX": 20, "gridY": 10 },
+    { "gridX": 22, "gridY": 2 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "SLOW" },
+    { "type": "ENCHANTMENT", "enchantmentId": "poison" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1800, "startDelay": 2000 },
+    { "enemyType": "VENOM", "count": 3, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "VENOM", "count": 4, "spawnInterval": 1300, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1200, "startDelay": 1000 },
+    { "enemyType": "VENOM", "count": 4, "spawnInterval": 1000, "startDelay": 500 }
+  ],
+  "startingEssence": 25,
+  "baseLives": 15,
+  "maxHandSize": 6
+}

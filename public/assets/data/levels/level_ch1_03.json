@@ -1,0 +1,51 @@
+{
+  "id": "ch1_03",
+  "name": "第一道防线",
+  "chapter": 1,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "grassland",
+  "pathWaypoints": [
+    { "x": 0, "y": 192 },
+    { "x": 288, "y": 192 },
+    { "x": 288, "y": 480 },
+    { "x": 576, "y": 480 },
+    { "x": 576, "y": 160 },
+    { "x": 864, "y": 160 },
+    { "x": 864, "y": 576 },
+    { "x": 1024, "y": 576 }
+  ],
+  "buildSpots": [
+    { "gridX": 3, "gridY": 4 },
+    { "gridX": 6, "gridY": 4 },
+    { "gridX": 6, "gridY": 10 },
+    { "gridX": 2, "gridY": 13 },
+    { "gridX": 11, "gridY": 13 },
+    { "gridX": 11, "gridY": 10 },
+    { "gridX": 18, "gridY": 3 },
+    { "gridX": 17, "gridY": 7 },
+    { "gridX": 25, "gridY": 3 },
+    { "gridX": 27, "gridY": 14 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "SLOW" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 4, "spawnInterval": 1800, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1200, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1500, "startDelay": 1500 },
+    { "enemyType": "TANK", "count": 1, "spawnInterval": 3000, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 4, "spawnInterval": 1000, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1200, "startDelay": 1000 },
+    { "enemyType": "TANK", "count": 2, "spawnInterval": 2500, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1000, "startDelay": 1000 }
+  ],
+  "startingEssence": 25,
+  "baseLives": 15,
+  "maxHandSize": 6
+}

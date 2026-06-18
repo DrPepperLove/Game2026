@@ -1,0 +1,51 @@
+{
+  "id": "ch3_02",
+  "name": "裂变",
+  "chapter": 3,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "mountain",
+  "pathWaypoints": [
+    { "x": 0, "y": 160 },
+    { "x": 192, "y": 160 },
+    { "x": 192, "y": 544 },
+    { "x": 480, "y": 544 },
+    { "x": 480, "y": 160 },
+    { "x": 768, "y": 160 },
+    { "x": 768, "y": 544 },
+    { "x": 1024, "y": 544 }
+  ],
+  "buildSpots": [
+    { "gridX": 3, "gridY": 3 },
+    { "gridX": 5, "gridY": 10 },
+    { "gridX": 3, "gridY": 14 },
+    { "gridX": 9, "gridY": 14 },
+    { "gridX": 12, "gridY": 14 },
+    { "gridX": 14, "gridY": 8 },
+    { "gridX": 15, "gridY": 3 },
+    { "gridX": 21, "gridY": 3 },
+    { "gridX": 22, "gridY": 10 },
+    { "gridX": 24, "gridY": 14 },
+    { "gridX": 28, "gridY": 14 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "SLOW" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1500, "startDelay": 2000 },
+    { "enemyType": "SPLITTER", "count": 2, "spawnInterval": 3000, "startDelay": 2000 },
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1200, "startDelay": 1500 },
+    { "enemyType": "SPLITTER", "count": 2, "spawnInterval": 2500, "startDelay": 1500 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1000, "startDelay": 1500 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 2000, "startDelay": 1500 },
+    { "enemyType": "TANK", "count": 3, "spawnInterval": 2000, "startDelay": 1000 }
+  ],
+  "startingEssence": 30,
+  "baseLives": 15,
+  "maxHandSize": 6
+}

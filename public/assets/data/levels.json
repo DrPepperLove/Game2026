@@ -1,0 +1,19 @@
+[
+  { "id": "ch1_01", "name": "初阵",         "description": "学习基础布防，迎战普通怪物",         "difficulty": 1, "waves": 4,  "chapter": 1, "unlocked": true },
+  { "id": "ch1_02", "name": "斥候来犯",     "description": "快速斥候来袭，考验你的反应速度",       "difficulty": 1, "waves": 6,  "chapter": 1, "unlocked": true },
+  { "id": "ch1_03", "name": "第一道防线",   "description": "首次遭遇装甲巨魔，建立坚固防线",       "difficulty": 2, "waves": 8,  "chapter": 1, "unlocked": true },
+
+  { "id": "ch2_01", "name": "毒雾弥漫",     "description": "毒液怪出没，掌握附魔系统",             "difficulty": 2, "waves": 6,  "chapter": 2, "unlocked": true },
+  { "id": "ch2_02", "name": "召唤之源",     "description": "召唤师登场，需要范围伤害应对",         "difficulty": 2, "waves": 7,  "chapter": 2, "unlocked": true },
+  { "id": "ch2_03", "name": "暗影之翼",     "description": "飞行单位首现！只有魔法塔能击中它们", "difficulty": 3, "waves": 8,  "chapter": 2, "unlocked": true },
+  { "id": "ch2_04", "name": "沼泽之心",     "description": "⚠ Boss战！沼泽巨鳄盘踞深处",           "difficulty": 3, "waves": 11, "chapter": 2, "unlocked": true },
+
+  { "id": "ch3_01", "name": "铁壁",         "description": "重甲怪物列阵，炮塔范围伤害显神威",     "difficulty": 3, "waves": 7,  "chapter": 3, "unlocked": true },
+  { "id": "ch3_02", "name": "裂变",         "description": "分裂怪一分为二，范围攻击至关重要",     "difficulty": 3, "waves": 7,  "chapter": 3, "unlocked": true },
+  { "id": "ch3_03", "name": "空陆协同",     "description": "空中与地面协同进攻，全面考验布阵",     "difficulty": 4, "waves": 9,  "chapter": 3, "unlocked": true },
+  { "id": "ch3_04", "name": "熔炉核心",     "description": "⚠ Boss战！熔岩巨像镇守核心",           "difficulty": 4, "waves": 12, "chapter": 3, "unlocked": true },
+
+  { "id": "ch4_01", "name": "混沌前兆",     "description": "全兵种混合冲锋，感受最终章的疯狂",     "difficulty": 4, "waves": 10, "chapter": 4, "unlocked": true },
+  { "id": "ch4_02", "name": "精英四柱",     "description": "四波精英怪轮番上阵",                 "difficulty": 5, "waves": 12, "chapter": 4, "unlocked": true },
+  { "id": "ch4_03", "name": "虚空尽头",     "description": "⚠ Boss战！两个混沌领主终极对决",       "difficulty": 5, "waves": 18, "chapter": 4, "unlocked": true }
+]

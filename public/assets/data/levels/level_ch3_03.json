@@ -1,0 +1,53 @@
+{
+  "id": "ch3_03",
+  "name": "空陆协同",
+  "chapter": 3,
+  "gridWidth": 32,
+  "gridHeight": 24,
+  "tileSize": 32,
+  "theme": "mountain",
+  "pathWaypoints": [
+    { "x": 0, "y": 480 },
+    { "x": 192, "y": 480 },
+    { "x": 192, "y": 192 },
+    { "x": 544, "y": 192 },
+    { "x": 544, "y": 480 },
+    { "x": 832, "y": 480 },
+    { "x": 832, "y": 128 },
+    { "x": 1024, "y": 128 }
+  ],
+  "buildSpots": [
+    { "gridX": 2, "gridY": 14 },
+    { "gridX": 4, "gridY": 5 },
+    { "gridX": 8, "gridY": 5 },
+    { "gridX": 13, "gridY": 5 },
+    { "gridX": 13, "gridY": 12 },
+    { "gridX": 10, "gridY": 14 },
+    { "gridX": 17, "gridY": 14 },
+    { "gridX": 22, "gridY": 14 },
+    { "gridX": 25, "gridY": 10 },
+    { "gridX": 26, "gridY": 2 },
+    { "gridX": 29, "gridY": 2 }
+  ],
+  "startingHand": [
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "MAGIC" },
+    { "type": "TOWER", "towerType": "CANNON" },
+    { "type": "TOWER", "towerType": "ARROW" },
+    { "type": "TOWER", "towerType": "SLOW" }
+  ],
+  "waves": [
+    { "enemyType": "BASIC", "count": 5, "spawnInterval": 1400, "startDelay": 2000 },
+    { "enemyType": "FLYING", "count": 4, "spawnInterval": 1200, "startDelay": 2000 },
+    { "enemyType": "SPLITTER", "count": 2, "spawnInterval": 2500, "startDelay": 2000 },
+    { "enemyType": "SCOUT", "count": 5, "spawnInterval": 1000, "startDelay": 1500 },
+    { "enemyType": "FLYING", "count": 4, "spawnInterval": 1000, "startDelay": 1500 },
+    { "enemyType": "SPLITTER", "count": 3, "spawnInterval": 2000, "startDelay": 1500 },
+    { "enemyType": "BASIC", "count": 6, "spawnInterval": 800, "startDelay": 1000 },
+    { "enemyType": "FLYING", "count": 4, "spawnInterval": 800, "startDelay": 500 },
+    { "enemyType": "SPLITTER", "count": 2, "spawnInterval": 1500, "startDelay": 500 }
+  ],
+  "startingEssence": 35,
+  "baseLives": 15,
+  "maxHandSize": 7
+}
