@@ -33,7 +33,7 @@ export class GameOverOverlay {
     }
 
     // Center card
-    const cardW = 400, cardH = 300;
+    const cardW = 460, cardH = 330;
     const cx = W / 2, cy = H / 2;
     const card = this.scene.add.graphics();
     // Shadow
@@ -100,12 +100,11 @@ export class GameOverOverlay {
     this.overlay.add(line);
     this.scene.tweens.add({ targets: line, alpha: 1, duration: 300, delay: 550 });
 
-    // ── Buttons ──
-    const btnW = 140, btnH = 40, btnY = cy + 55;
-    const gap = 20;
+    // ── Buttons (inside card, centered) ──
+    const btnW = 125, btnH = 40, btnY = cy + 65;
+    const gap = 16;
 
     this.scene.time.delayedCall(650, () => {
-      // Determine how many buttons we need
       const hasNext = victory && this.mode === 'campaign' ? !!getNextLevel(this.levelId) : false;
       const btnCount = hasNext ? 3 : 2;
       const totalW = btnCount * btnW + (btnCount - 1) * gap;

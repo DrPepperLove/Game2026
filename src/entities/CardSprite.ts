@@ -121,7 +121,7 @@ export class CardSprite extends Phaser.GameObjects.Container {
     g.clear();
     const w = CardSprite.WIDTH, h = CardSprite.HEIGHT;
     const hw = w / 2, hh = h / 2;
-    const bodyY = sel ? -hh - 8 : -hh;
+    const bodyY = -hh;
     const borderColor = sel ? COLORS.CARD_SELECTED_GLOW : this.getBorderColor();
     const isEnchant = this.cardData.type === CardType.ENCHANTMENT;
 
@@ -194,6 +194,9 @@ export class CardSprite extends Phaser.GameObjects.Container {
     this.rarityDot.fillCircle(-hw + 10, bodyY + 10, 4);
     this.rarityDot.fillStyle(0xFFFFFF, 0.4);
     this.rarityDot.fillCircle(-hw + 9, bodyY + 9, 2);
+
+    // 保持 badge 文字与圆圈同步
+    this.badgeText.setPosition(bx, by);
   }
 
   setHovered(h: boolean): void {

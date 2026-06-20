@@ -192,14 +192,15 @@ export class CardRewardUI {
     this.overlay!.add(cat);
     this.scene.tweens.add({ targets: cat, alpha: 1, duration: 300, delay: delay + 250 });
 
-    // Description
-    const desc = card.description.length > 22
-      ? card.description.slice(0, 20) + '…'
-      : card.description;
+    // Description — useAdvancedWrap enables CJK line-breaking
+    const descMaxLines = 3;
+    const desc = card.description;
     const descText = this.scene.add.text(x, y + 68, desc, {
       fontSize: '11px', fontFamily: 'Arial, sans-serif',
       color: '#AAAACC', stroke: '#000', strokeThickness: 1,
-      align: 'center', wordWrap: { width: w - 24 },
+      align: 'center',
+      wordWrap: { width: w - 24, useAdvancedWrap: true },
+      maxLines: descMaxLines,
     }).setOrigin(0.5, 0).setAlpha(0);
     this.overlay!.add(descText);
     this.scene.tweens.add({ targets: descText, alpha: 1, duration: 300, delay: delay + 300 });

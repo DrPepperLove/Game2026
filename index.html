@@ -21,6 +21,22 @@
 </head>
 <body>
   <div id="game-container"></div>
+  <script>
+    window.onerror = function(msg, src, line, col, err) {
+      var el = document.getElementById('game-status');
+      if (!el) { el = document.createElement('div'); el.id = 'game-status'; document.body.appendChild(el); }
+      el.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:999;padding:8px 16px;font-family:monospace;font-size:13px;color:#f00;background:rgba(0,0,0,0.9);text-align:center;';
+      el.textContent = 'JS错误: ' + (err && err.message || msg) + ' (行' + line + ')';
+      console.error('Global error:', msg, src, line, col, err);
+    };
+    window.addEventListener('unhandledrejection', function(e) {
+      var el = document.getElementById('game-status');
+      if (!el) { el = document.createElement('div'); el.id = 'game-status'; document.body.appendChild(el); }
+      el.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:999;padding:8px 16px;font-family:monospace;font-size:13px;color:#f00;background:rgba(0,0,0,0.9);text-align:center;';
+      el.textContent = 'Promise错误: ' + (e.reason && e.reason.message || String(e.reason));
+      console.error('Unhandled rejection:', e.reason);
+    });
+  </script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

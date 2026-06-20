@@ -29,6 +29,13 @@ export class BootScene extends Phaser.Scene {
   preload(): void {
     const { width, height } = this.cameras.main;
 
+    // Loading text
+    const loadText = this.add.text(width / 2, height / 2 - 50, '⏳ 加载资源中...', {
+      fontSize: '18px',
+      fontFamily: 'monospace',
+      color: '#e0d8c0',
+    }).setOrigin(0.5);
+
     // Progress bar
     const box = this.add.graphics();
     box.fillStyle(0x3A2E1E, 0.8);
@@ -40,7 +47,17 @@ export class BootScene extends Phaser.Scene {
       bar.fillStyle(0x8CC63F, 1);
       bar.fillRoundedRect(width / 2 - 152, height / 2 - 13, 300 * v, 26, 6);
     });
-    this.load.on('complete', () => { bar.destroy(); box.destroy(); });
+    this.load.on('complete', () => {
+      bar.destroy();
+      box.destroy();
+      loadText.destroy();
+    });
+
+    // 加载出错提示
+    this.load.on('loaderror', (_file: any) => {
+      loadText.setText('⚠️ 资源加载失败: ' + (_file?.key || _file?.url || 'unknown'));
+      loadText.setColor('#ff6666');
+    });
 
     // Load all tile textures
     const sources = TILE_TEXTURES.SOURCES as Record<string, string>;

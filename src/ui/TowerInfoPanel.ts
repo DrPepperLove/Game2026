@@ -8,7 +8,7 @@ export class TowerInfoPanel {
   private container: Phaser.GameObjects.Container | null = null;
   private currentTower: ITower | null = null;
   private static readonly PANEL_W = 250;
-  private static readonly PANEL_H = 420;
+  private static readonly PANEL_H = 460;
 
   constructor(scene: Phaser.Scene) {
     this.scene = scene;
@@ -211,7 +211,7 @@ export class TowerInfoPanel {
       yOff += 22;
     }
 
-    yOff += 6;
+    yOff += 22;
 
     // ── Demolish button ────────────────────────────
     const refund = Math.ceil(tower.getTotalInvestedCost() * 0.5);
